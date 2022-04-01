@@ -1,0 +1,37 @@
+<div class="row mt-5" *ngIf="movie">
+    <div class="col-md-6">
+        <img [src]="movie.poster_path| poster" [alt]="movie.title" class="img-thumbnail">
+    </div>
+    <div class="col-md-6">
+<h3>{{movie.title}}</h3>
+<div class="row">
+    <div class="col">
+        <ngb-rating class="col-8" [rate]="movie.vote_average">
+                  
+        </ngb-rating>
+    </div>
+    <div class="col">
+        {{movie.vote_average | number:'1.1-2'}}
+
+    </div>
+</div>
+<div class="row mt-5">
+    <div class="col">
+        {{movie.overview}}
+    </div>
+</div>
+<div class="row mt-5">
+    <div class="col">
+        <button (click)="backPage()" class="btn btn-outline-info">
+            Regresar
+        </button>
+    </div>
+</div>
+    </div>
+    <div class=" mt-5" *ngIf="cast.length > 0">
+        <div class="col">
+            <app-cast-slide-show [cast]="cast"></app-cast-slide-show>
+        </div>
+    </div>
+</div>
+

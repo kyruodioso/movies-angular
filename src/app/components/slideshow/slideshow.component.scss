@@ -1,0 +1,11 @@
+
+img{
+    min-height: 300px;
+    height: calc(100vh/ 2.5);
+    max-height: 360px;
+}
+.carousel-caption{
+    background-color: rgba($color: #54358d, $alpha: 0.3);
+    color: white;
+
+}

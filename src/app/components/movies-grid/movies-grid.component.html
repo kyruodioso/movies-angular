@@ -1,0 +1,22 @@
+
+
+<div class="row row-cols-1 row-cols-sm-4 row-cols-2">
+    <div class="col mb-5"  *ngFor="let movie of movies">
+      <div class="card" >
+        <img class="img-card" [src]="movie.poster_path| poster" (click)="movieClick(movie)">
+
+        <div class="card-body">
+          <h5 class="card-title">{{movie.title}}</h5>
+          <div class="row">
+
+              <ngb-rating class="col-8" [rate]="movie.vote_average">
+                  
+              </ngb-rating>
+              <div class="col-6 col-md-4">
+                  {{movie.vote_average | number:'1.1-2'}}
+                </div>
+            </div>
+            </div>
+      </div>
+    </div>
+  </div>

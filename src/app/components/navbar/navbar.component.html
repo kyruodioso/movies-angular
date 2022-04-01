@@ -1,0 +1,13 @@
+<nav class="navbar bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="/" routerLinkActive="router-link-active" >MoviesDB</a>
+      <div class="d-flex">
+        <input #txtSearch
+        (keyup.enter)="searchMovie(txtSearch.value)" 
+        class="form-control me-2" type="search" 
+        placeholder="Buscar Pelicula" 
+        aria-label="Search">
+        <button (click)="searchMovie(txtSearch.value)" class="btn btn-outline-info" type="submit">Buscar</button>
+      </div>
+    </div>
+  </nav>

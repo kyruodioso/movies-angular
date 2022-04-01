@@ -1,0 +1,13 @@
+<ngb-carousel >
+  <ng-template ngbSlide *ngFor="let movie of movies">
+    <div class="carousel-container">
+    <div class="picsum-img-wrapper">
+      <img src='https://image.tmdb.org/t/p/original{{movie.backdrop_path}}' alt="Random slide" class="w-100">
+    </div>
+    <div class="carousel-caption">
+      <h3>{{movie.title}}</h3>
+      <p>{{movie.overview | slice:0:130}}...</p>
+    </div>
+  </div>
+  </ng-template>
+</ngb-carousel>
