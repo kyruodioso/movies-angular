@@ -12,6 +12,7 @@ import { CastSlideShowComponent } from './cast-slide-show/cast-slide-show.compon
 
 
 
+
 @NgModule({
   declarations: [
     NavbarComponent,
@@ -23,7 +24,8 @@ import { CastSlideShowComponent } from './cast-slide-show/cast-slide-show.compon
     CommonModule,
     RouterModule,
     NgbModule,
-    PipesModule
+    PipesModule,
+    
   ],
   exports:[
     NavbarComponent,

@@ -1,8 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
-
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+$font-heading: 200;
 
 h1,h2,h3,h4,h5 {
-    font-weight: 200;
+    font-weight: $font-heading;
 }
 
 
@@ -10,5 +12,4 @@ h1,h2,h3,h4,h5 {
 .block {
     display:block;
 }
-/* Importing Bootstrap SCSS file. */
-@import '~bootstrap/scss/bootstrap';
+
